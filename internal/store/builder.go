@@ -38,6 +38,7 @@ import (
 	policyv1 "k8s.io/api/policy/v1"
 	rbacv1 "k8s.io/api/rbac/v1"
 	storagev1 "k8s.io/api/storage/v1"
+	jobsetv1alpha2 "sigs.k8s.io/jobset/api/jobset/v1alpha2"
 	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/klog/v2"
@@ -322,6 +323,7 @@ var availableStores = map[string]func(f *Builder) []cache.Store{
 	"ingresses":                       func(b *Builder) []cache.Store { return b.buildIngressStores() },
 	"ingressclasses":                  func(b *Builder) []cache.Store { return b.buildIngressClassStores() },
 	"jobs":                            func(b *Builder) []cache.Store { return b.buildJobStores() },
+	"jobset":                          func(b *Builder) []cache.Store { return b.buildJobSetStores() },
 	"leases":                          func(b *Builder) []cache.Store { return b.buildLeasesStores() },
 	"limitranges":                     func(b *Builder) []cache.Store { return b.buildLimitRangeStores() },
 	"mutatingwebhookconfigurations":   func(b *Builder) []cache.Store { return b.buildMutatingWebhookConfigurationStores() },
@@ -497,6 +499,10 @@ func (b *Builder) buildRoleBindingStores() []cache.Store {
 
 func (b *Builder) buildIngressClassStores() []cache.Store {
 	return b.buildStoresFunc(ingressClassMetricFamilies(b.allowAnnotationsList["ingressclasses"], b.allowLabelsList["ingressclasses"]), &networkingv1.IngressClass{}, createIngressClassListWatch, b.useAPIServerCache)
+}
+
+func (b *Builder) buildJobSetStores() []cache.Store {
+	return b.buildStoresFunc(jobSetMetricFamilies(b.allowAnnotationsList["jobsets"], b.allowLabelsList["jobsets"]), &batchv1.Job{}, createJobListWatch, b.useAPIServerCache)
 }
 
 func (b *Builder) buildStores(

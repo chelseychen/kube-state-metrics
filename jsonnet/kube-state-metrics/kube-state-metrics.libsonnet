@@ -163,6 +163,13 @@
         ],
         verbs: ['list', 'watch'],
       },
+      {
+        apiGroups: ['jobset.sigs.k8s.io'],
+        resources: [
+          'jobset',
+        ],
+        verbs: ['list', 'watch'],
+      },
     ];
 
     {

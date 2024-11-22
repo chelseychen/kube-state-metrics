@@ -1,0 +1,31 @@
+apiVersion: jobset.x-k8s.io/v1alpha1
+kind: JobSet
+metadata:
+  name: jobset
+  namespace: default
+spec:
+  failurePolicy:
+    maxRestarts: 4  # The set will be restarted on failures up to 4 times.
+  replicatedJobs:
+    - name: slice    # child job name prefix 
+      replicas: 2    # Number of slices
+      template:
+        spec:
+          parallelism: 2   # number of nodes in each node pool
+          completions: 2   # number of nodes in each node pool
+          backoffLimit: 0   # Must be set to 0. Fail when any pod fails.
+          template:
+            spec:
+              hostNetwork: true
+              dnsPolicy: ClusterFirstWithHostNet
+              serviceAccountName: my-ksa
+              nodeSelector:
+                cloud.google.com/gke-tpu-accelerator: tpu-v5lite-podslice
+                cloud.google.com/gke-tpu-topology: 4x4
+                MultisliceGroupSize: "2"
+              containers:
+              - name: jax-tpu
+                image: gcr.io/<your-gcp-project>/<group>/<image>:latest
+                ports:
+                - containerPort: 8471
+                - containerPort: 8080 # Port for MXLA coordinator

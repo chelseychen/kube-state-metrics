@@ -35,6 +35,7 @@ var (
 		"horizontalpodautoscalers":        struct{}{},
 		"ingresses":                       struct{}{},
 		"jobs":                            struct{}{},
+		"jobsets":                         struct{}{},
 		"leases":                          struct{}{},
 		"limitranges":                     struct{}{},
 		"mutatingwebhookconfigurations":   struct{}{},
