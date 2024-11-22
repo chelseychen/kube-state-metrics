@@ -1,0 +1,1814 @@
+[33mcommit 94c73687e6ad23c76ac1dbdfe2dfce311f50211b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Chelsey Chen <chelseychen@google.com>
+Date:   Fri Nov 22 21:32:13 2024 +0000
+
+    Reapply "Support JobSet metrics"
+    
+    This reverts commit 6ed006bf5942371fff4a6fe6a1c98f882097657f.
+
+[33mcommit f2c1f74fcfbd98d443dec2f89af5533f28cb3682[m
+Author: Chelsey Chen <chelseychen@google.com>
+Date:   Fri Nov 22 21:31:32 2024 +0000
+
+    Revert "Support JobSet metrics"
+    
+    This reverts commit 41006f0c8946cead8e27842281df724c63a12cd6.
+
+[33mcommit 1d07b352f559ec478fc260184d2ebc9b0d93d258[m
+Author: Chelsey Chen <chelseychen@google.com>
+Date:   Fri Nov 22 18:29:16 2024 +0000
+
+    Support JobSet metrics
+
+[33mcommit e1a94637849026216e4b92009adf70f13fc87bb9[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Chelsey Chen <chelseychen@google.com>
+Date:   Fri Nov 22 18:29:16 2024 +0000
+
+    Support JobSet metrics
+
+[33mcommit 76308fc8b860384a4ca06f86702a1c1e13e0ea2c[m
+Merge: ea5826a9 b3ac231a
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Nov 22 10:28:58 2024 +0000
+
+    Merge pull request #2561 from kubernetes/dependabot/go_modules/k8s-dependencies-58b4af6dfc
+    
+    build(deps): Bump the k8s-dependencies group with 5 updates
+
+[33mcommit b3ac231a32303ca291577b95bc0ab0cc1094bd0b[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Nov 22 10:20:23 2024 +0000
+
+    build(deps): Bump the k8s-dependencies group with 5 updates
+    
+    Bumps the k8s-dependencies group with 5 updates:
+    
+    | Package | From | To |
+    | --- | --- | --- |
+    | [k8s.io/api](https://github.com/kubernetes/api) | `0.31.2` | `0.31.3` |
+    | [k8s.io/apimachinery](https://github.com/kubernetes/apimachinery) | `0.31.2` | `0.31.3` |
+    | [k8s.io/client-go](https://github.com/kubernetes/client-go) | `0.31.2` | `0.31.3` |
+    | [k8s.io/component-base](https://github.com/kubernetes/component-base) | `0.31.2` | `0.31.3` |
+    | [k8s.io/sample-controller](https://github.com/kubernetes/sample-controller) | `0.31.2` | `0.31.3` |
+    
+    
+    Updates `k8s.io/api` from 0.31.2 to 0.31.3
+    - [Commits](https://github.com/kubernetes/api/compare/v0.31.2...v0.31.3)
+    
+    Updates `k8s.io/apimachinery` from 0.31.2 to 0.31.3
+    - [Commits](https://github.com/kubernetes/apimachinery/compare/v0.31.2...v0.31.3)
+    
+    Updates `k8s.io/client-go` from 0.31.2 to 0.31.3
+    - [Changelog](https://github.com/kubernetes/client-go/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/kubernetes/client-go/compare/v0.31.2...v0.31.3)
+    
+    Updates `k8s.io/component-base` from 0.31.2 to 0.31.3
+    - [Commits](https://github.com/kubernetes/component-base/compare/v0.31.2...v0.31.3)
+    
+    Updates `k8s.io/sample-controller` from 0.31.2 to 0.31.3
+    - [Commits](https://github.com/kubernetes/sample-controller/compare/v0.31.2...v0.31.3)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: k8s.io/api
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/apimachinery
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/client-go
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/component-base
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/sample-controller
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit ea5826a92cde206fc6784d2cb6b7c2548d2b2290[m
+Merge: 17151aca 569e820c
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Thu Nov 14 14:25:17 2024 +0000
+
+    Merge pull request #2376 from mrueg/cronjob-add-timezone
+    
+    feat: Add timezone to kube_cronjob_info / Make kube_cronjob_next_schedule_time timezone-aware
+
+[33mcommit 17151aca659e0659259b5e1f5675acf849281ade[m
+Merge: 77e564ba e763ea2a
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Nov 8 13:08:43 2024 +0000
+
+    Merge pull request #2552 from kubernetes/release-2.14
+    
+    chore: Merge Release 2.14 back to main
+
+[33mcommit e763ea2aa37e7fa507775a8506387aaa95ff17d1[m
+Merge: 77e564ba b4d98d7b
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Nov 8 09:52:43 2024 +0000
+
+    Merge pull request #2538 from mrueg/prep-2.14.0
+    
+    chore: Cut v2.14.0
+
+[33mcommit b4d98d7b401a0e384cce9a353d53a67cd34a2071[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Oct 30 13:17:04 2024 +0100
+
+    chore: Cut v2.14.0
+
+[33mcommit 77e564ba5d599d0db5332f8b7c1fcc045612a1b2[m
+Merge: 0bcfd5bb cad704d4
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Nov 8 09:40:43 2024 +0000
+
+    Merge pull request #2536 from Haleygo/fix-custom-metric-value-conversion
+    
+    fix(custom resource state metrics): correctly convert status condition `Unknown` to a valid value
+
+[33mcommit cad704d488926560de36d97cdfc195fe959770fa[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Nov 8 10:32:59 2024 +0100
+
+    Update pkg/customresourcestate/registry_factory.go
+
+[33mcommit d7d2d89017015a2296bd74ebf26a30ee08d90084[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Nov 8 10:32:47 2024 +0100
+
+    Update docs/metrics/extend/customresourcestate-metrics.md
+
+[33mcommit 0bcfd5bba5ec835939918f048ea0e2805e543e19[m
+Merge: b6499c9a c5665b69
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Nov 8 09:20:43 2024 +0000
+
+    Merge pull request #2548 from mrueg/go-1.23.3
+    
+    chore: Bump versions
+
+[33mcommit b6499c9af7347400f39f6d76f4ef20c3e498473f[m
+Merge: 5e7d0f45 1734bd84
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Thu Nov 7 20:02:44 2024 +0000
+
+    Merge pull request #2547 from Henrywu573/myfeature
+    
+    fix: Remove redundant factories array since it is not written after
+
+[33mcommit 5e7d0f452315ce17fddda69f31869624930cf48c[m
+Merge: c87b5071 7a54a8eb
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Thu Nov 7 19:56:44 2024 +0000
+
+    Merge pull request #2542 from Indresh2410/add-kube-job-status-suspended-metric
+    
+    feat: Add new metric kube_job_status_suspended
+
+[33mcommit c5665b69bf2d7f043298f33068ad8204b91232e3[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Nov 7 08:15:02 2024 +0100
+
+    chore: Bump versions
+
+[33mcommit 7a54a8ebf0e8b9afa092b308e905bd3f12c0430e[m
+Author: Indresh2410 <indreshprakash24@gmail.com>
+Date:   Thu Nov 7 05:52:47 2024 +0000
+
+    Add new line
+
+[33mcommit b2c8fa7837e75ce6139f8bb4e56ce8ef023d563d[m
+Author: Indresh2410 <indreshprakash24@gmail.com>
+Date:   Wed Nov 6 16:12:17 2024 +0000
+
+    Address Review Comments
+
+[33mcommit ba7ff1a0e5dce693709f06e84236b7e4fdca1514[m
+Author: Indresh2410 <indreshprakash24@gmail.com>
+Date:   Wed Nov 6 16:10:02 2024 +0000
+
+    Address Review Comments
+
+[33mcommit 34abbcf20208b14ed727d4be64670401540294a1[m
+Author: Indresh2410 <indreshprakash24@gmail.com>
+Date:   Wed Nov 6 16:02:38 2024 +0000
+
+    Address Review Comments
+
+[33mcommit 076987a505f4657582125886383ec68eba5ec45d[m
+Author: Indresh-Prakash <indreshprakash24@gmail.com>
+Date:   Sat Nov 2 12:10:41 2024 +0000
+
+    Add kube_job_status_suspended metric
+
+[33mcommit 1734bd840305419db324a69b4a8edace85b2b76d[m
+Author: Henry Wu <wqs@google.com>
+Date:   Thu Nov 7 00:07:36 2024 +0000
+
+    Remove redundant factories array since it is not written after
+    construction.
+
+[33mcommit c87b5071169dde025ac5eec1077385dfb50ba255[m
+Merge: c804368d 9c61d7ea
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Nov 6 19:17:30 2024 +0000
+
+    Merge pull request #2546 from mrueg/fix-ci
+    
+    chore: Fix broken CI
+
+[33mcommit 9c61d7ea81b7b25e4ea376d9040331468e7c9948[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Nov 6 17:43:35 2024 +0100
+
+    chore: Fix broken CI
+
+[33mcommit c804368d08729e2d66d9f60bc1d252d0ac753a54[m
+Merge: 0738de0b fa277219
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Nov 6 11:23:32 2024 +0000
+
+    Merge pull request #2545 from mrueg/fix-benchmarks
+    
+    chore: Improve benchmarks
+
+[33mcommit fa27721993080921f65a006cfeaa7a1009c7027e[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Nov 6 11:35:23 2024 +0100
+
+    Update .github/workflows/ci.yml
+    
+    Co-authored-by: Pranshu Srivastava <prasriva@redhat.com>
+
+[33mcommit 030353285135bacda59e5affb732959d9556c651[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Nov 6 09:46:34 2024 +0100
+
+    chore: Integrate benchmark output in GHA
+    
+    The code comes from ivanvc in https://github.com/etcd-io/bbolt/pull/750
+
+[33mcommit 02b6a214c6d0cab1b70481642a67b17b486e3651[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Nov 6 09:13:32 2024 +0100
+
+    chore: Run the benchmark for two rounds
+
+[33mcommit b0e9be550b640538fdb15b8149292ac2ecd3fc51[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Nov 6 09:10:20 2024 +0100
+
+    fix: Remove log output from benchmark
+    
+    Without this change Info logs appear in the benchmark
+    
+    ok      k8s.io/kube-state-metrics/v2/pkg/allowdenylist  0.005s
+    I1106 08:50:22.006480  144965 builder.go:280] "Active resources" activeStoreNames="certificatesigningrequests,configmaps,cronjobs,daemonsets,deployments,endpoints,horizontalpodautoscalers,ingresses,jobs,leases,limitranges,mutatingwebhookconfigurations,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,replicasets,replicationcontrollers,resourcequotas,secrets,services,statefulsets,storageclasses,validatingwebhookconfigurations,volumeattachments"
+    goos: linux
+    goarch: amd64
+    pkg: k8s.io/kube-state-metrics/v2/pkg/app
+    cpu: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+    BenchmarkKubeStateMetrics/GenerateMetrics-8                    1        1001291639 ns/op        67578008 B/op     582810 allocs/op
+
+[33mcommit fac6119d43f284443d1af024cdacb11d22238d9a[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Tue Nov 5 23:06:10 2024 +0100
+
+    chore: Allow setting rounds in benchmark
+
+[33mcommit 0738de0be2ba1607aac8b58a0d783891664d48a9[m
+Merge: dfb688c9 2aa766ee
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Nov 5 20:41:30 2024 +0000
+
+    Merge pull request #2539 from mrueg/expose-empty-labels
+    
+    fix: expose empty labels
+
+[33mcommit dfb688c966bc13e17489afacc0a11e082ac69fb9[m
+Merge: 61a1993f f2a76390
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Nov 5 19:47:30 2024 +0000
+
+    Merge pull request #2510 from rarruda/fix/reduce_locking
+    
+    perf: use concurrent map when storing metrics
+
+[33mcommit 61a1993fdc76a03cf1ec7220b02b4a03956cb800[m
+Merge: ca66c9d3 c67f02f0
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Nov 5 10:07:29 2024 +0000
+
+    Merge pull request #2540 from leiwingqueen/fix-value-overflow
+    
+    fix: big memory overflow
+
+[33mcommit c67f02f0f3763f0f5cafa7a9428624e0820f2f78[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Tue Nov 5 10:58:10 2024 +0100
+
+    Apply suggestions from code review
+
+[33mcommit 7980f03c52efb5a51d2fc6c1f0b8c94c028a6a14[m
+Author: leiwingqueen <leiwingqueen@gmail.com>
+Date:   Tue Nov 5 00:02:19 2024 +0800
+
+    fix convert float64 error
+
+[33mcommit 37f10f06023dac913c8581c9dc0d05156d3da0e4[m
+Author: leiwingqueen <leiwingqueen@gmail.com>
+Date:   Mon Nov 4 23:33:53 2024 +0800
+
+    fix lint
+
+[33mcommit ca66c9d3446285f44ae9255346590942de55e6bd[m
+Merge: 3c6bc839 ea648da9
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Nov 4 12:47:29 2024 +0000
+
+    Merge pull request #2543 from kubernetes/dependabot/go_modules/github.com/fsnotify/fsnotify-1.8.0
+    
+    build(deps): Bump github.com/fsnotify/fsnotify from 1.7.0 to 1.8.0
+
+[33mcommit ea648da9c68a16ebef3ac5048029e7093b58c8f5[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Nov 4 09:08:25 2024 +0000
+
+    build(deps): Bump github.com/fsnotify/fsnotify from 1.7.0 to 1.8.0
+    
+    Bumps [github.com/fsnotify/fsnotify](https://github.com/fsnotify/fsnotify) from 1.7.0 to 1.8.0.
+    - [Release notes](https://github.com/fsnotify/fsnotify/releases)
+    - [Changelog](https://github.com/fsnotify/fsnotify/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/fsnotify/fsnotify/compare/v1.7.0...v1.8.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/fsnotify/fsnotify
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 70088ed1eafe8e9aaa2d502678218ad99e05b287[m
+Author: Haley Wang <haley@victoriametrics.com>
+Date:   Mon Nov 4 16:38:57 2024 +0800
+
+    apply review comment
+
+[33mcommit f94ef65cc70fca45f102207dc4a66393ce84c829[m
+Author: leiwingqueen <leiwingqueen@gmail.com>
+Date:   Mon Nov 4 10:09:18 2024 +0800
+
+    fix overflow in other occasion
+
+[33mcommit e5eb2ed132ca502b6188b9f7b2b5c9f0b1db88f1[m
+Author: leiwingqueen <leiwingqueen@gmail.com>
+Date:   Sat Nov 2 22:16:15 2024 +0800
+
+    fix lint error
+
+[33mcommit 2c346763cf709bfed20b62a9a706f165d8d6e3c9[m
+Author: leiwingqueen <leiwingqueen@gmail.com>
+Date:   Sat Nov 2 09:55:35 2024 +0800
+
+    change convertValueToFloat64 function name
+
+[33mcommit 31f793129f184cca6e8823c1eb910cc1558bae73[m
+Author: leiwingqueen <leiwingqueen@gmail.com>
+Date:   Fri Nov 1 16:16:08 2024 +0800
+
+    fix big memory overflow
+
+[33mcommit 2aa766ee038c37ce8f260b6bfd884a45e0d67607[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Oct 31 17:40:32 2024 +0100
+
+    serviceaccounts: Expose empty labels
+
+[33mcommit 9f15cc1c8c3c0fdd6895155ed3f3c3493332cb64[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Oct 31 17:40:10 2024 +0100
+
+    pods: Expose empty labels
+
+[33mcommit 63749c5d15d909932071e53b47abf2a82e2940ae[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Oct 31 12:29:35 2024 +0100
+
+    endpoints: Expose empty labels
+
+[33mcommit 75e7841c106fdf34635eedd995fa39889c50563a[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Oct 31 12:21:51 2024 +0100
+
+    endpointslices: Expose empty labels
+
+[33mcommit 3c6bc839119b271bf9fa86809d5b3b1421fc1d36[m
+Merge: eb5e3470 c24e50d0
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Oct 30 11:39:25 2024 +0000
+
+    Merge pull request #2537 from kubernetes/dependabot/go_modules/github.com/prometheus/exporter-toolkit-0.13.1
+    
+    build(deps): Bump github.com/prometheus/exporter-toolkit from 0.13.0 to 0.13.1
+
+[33mcommit c24e50d04234ff4a7185876253bb14e0c5234f4b[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Oct 30 11:29:29 2024 +0000
+
+    build(deps): Bump github.com/prometheus/exporter-toolkit
+    
+    Bumps [github.com/prometheus/exporter-toolkit](https://github.com/prometheus/exporter-toolkit) from 0.13.0 to 0.13.1.
+    - [Release notes](https://github.com/prometheus/exporter-toolkit/releases)
+    - [Changelog](https://github.com/prometheus/exporter-toolkit/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/exporter-toolkit/compare/v0.13.0...v0.13.1)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/exporter-toolkit
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 17c69692c470ccc3001a622b3a1e841a8004f353[m
+Author: Haley Wang <haley@victoriametrics.com>
+Date:   Tue Oct 29 13:55:05 2024 +0800
+
+    fix(custom resource state metrics): corrctly convert status condition `Unknown` to a valid value
+
+[33mcommit eb5e34701d4f486e51036f45880af7b0a63e43ca[m
+Merge: 45b7e20e 110f03d7
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Sun Oct 27 12:02:54 2024 +0000
+
+    Merge pull request #2535 from L3n41c/fix_gvrfromtype
+    
+    fix: panic in `util.GVRFromType` for core objects
+
+[33mcommit 110f03d7331faddbd1950fb2a5cd7f713b775704[m
+Author: Lénaïc Huard <lenaic.huard@datadoghq.com>
+Date:   Thu Oct 24 18:39:17 2024 +0200
+
+    Fix a panic in GVRFromType for core objects
+
+[33mcommit 45b7e20ee3cbecd6c5c2960a581fd5a931bd7826[m
+Merge: 2db568c4 3b5c6240
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Oct 25 01:22:52 2024 +0100
+
+    Merge pull request #2531 from kubernetes/dependabot/github_actions/actions/setup-go-5.1.0
+    
+    build(deps): Bump actions/setup-go from 5.0.2 to 5.1.0
+
+[33mcommit 2db568c4fc9a2a18b0b0bfaeb4f0691ac86fa2a8[m
+Merge: 32d5ab5a 2dacb294
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Oct 25 01:14:52 2024 +0100
+
+    Merge pull request #2533 from kubernetes/dependabot/go_modules/k8s-dependencies-61858d65be
+    
+    build(deps): Bump the k8s-dependencies group with 5 updates
+
+[33mcommit 3b5c6240a9eb65886743259e70b632a8cff545a1[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Oct 25 00:13:02 2024 +0000
+
+    build(deps): Bump actions/setup-go from 5.0.2 to 5.1.0
+    
+    Bumps [actions/setup-go](https://github.com/actions/setup-go) from 5.0.2 to 5.1.0.
+    - [Release notes](https://github.com/actions/setup-go/releases)
+    - [Commits](https://github.com/actions/setup-go/compare/0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32...41dfa10bad2bb2ae585af6ee5bb4d7d973ad74ed)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/setup-go
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 32d5ab5ac532180d693bc90d47085ae72de1aef3[m
+Merge: 7574addd 51f854f3
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Oct 25 01:12:52 2024 +0100
+
+    Merge pull request #2534 from kubernetes/dependabot/go_modules/github.com/prometheus/common-0.60.1
+    
+    build(deps): Bump github.com/prometheus/common from 0.60.0 to 0.60.1
+
+[33mcommit 7574addd80b3f494f6eb820fefc3e4bb41fa375b[m
+Merge: 9652c29f f3ff773d
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Oct 25 01:10:52 2024 +0100
+
+    Merge pull request #2532 from kubernetes/dependabot/github_actions/actions/checkout-4.2.2
+    
+    build(deps): Bump actions/checkout from 4.2.1 to 4.2.2
+
+[33mcommit 51f854f305b3f27de2a828fd8bdbf950bfb2262a[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Oct 25 00:03:46 2024 +0000
+
+    build(deps): Bump github.com/prometheus/common from 0.60.0 to 0.60.1
+    
+    Bumps [github.com/prometheus/common](https://github.com/prometheus/common) from 0.60.0 to 0.60.1.
+    - [Release notes](https://github.com/prometheus/common/releases)
+    - [Changelog](https://github.com/prometheus/common/blob/main/RELEASE.md)
+    - [Commits](https://github.com/prometheus/common/compare/v0.60.0...v0.60.1)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/common
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 2dacb29426176ec8529d808d9d1e6e93f98b8165[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Oct 25 00:03:39 2024 +0000
+
+    build(deps): Bump the k8s-dependencies group with 5 updates
+    
+    Bumps the k8s-dependencies group with 5 updates:
+    
+    | Package | From | To |
+    | --- | --- | --- |
+    | [k8s.io/api](https://github.com/kubernetes/api) | `0.31.1` | `0.31.2` |
+    | [k8s.io/apimachinery](https://github.com/kubernetes/apimachinery) | `0.31.1` | `0.31.2` |
+    | [k8s.io/client-go](https://github.com/kubernetes/client-go) | `0.31.1` | `0.31.2` |
+    | [k8s.io/component-base](https://github.com/kubernetes/component-base) | `0.31.1` | `0.31.2` |
+    | [k8s.io/sample-controller](https://github.com/kubernetes/sample-controller) | `0.31.1` | `0.31.2` |
+    
+    
+    Updates `k8s.io/api` from 0.31.1 to 0.31.2
+    - [Commits](https://github.com/kubernetes/api/compare/v0.31.1...v0.31.2)
+    
+    Updates `k8s.io/apimachinery` from 0.31.1 to 0.31.2
+    - [Commits](https://github.com/kubernetes/apimachinery/compare/v0.31.1...v0.31.2)
+    
+    Updates `k8s.io/client-go` from 0.31.1 to 0.31.2
+    - [Changelog](https://github.com/kubernetes/client-go/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/kubernetes/client-go/compare/v0.31.1...v0.31.2)
+    
+    Updates `k8s.io/component-base` from 0.31.1 to 0.31.2
+    - [Commits](https://github.com/kubernetes/component-base/compare/v0.31.1...v0.31.2)
+    
+    Updates `k8s.io/sample-controller` from 0.31.1 to 0.31.2
+    - [Commits](https://github.com/kubernetes/sample-controller/compare/v0.31.1...v0.31.2)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: k8s.io/api
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/apimachinery
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/client-go
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/component-base
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    - dependency-name: k8s.io/sample-controller
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+      dependency-group: k8s-dependencies
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit f3ff773d3169b35289296cbfb3b182b5d7ea3422[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Oct 25 00:03:10 2024 +0000
+
+    build(deps): Bump actions/checkout from 4.2.1 to 4.2.2
+    
+    Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.1 to 4.2.2.
+    - [Release notes](https://github.com/actions/checkout/releases)
+    - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/actions/checkout/compare/eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871...11bd71901bbe5b1630ceea73d27597364c9af683)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/checkout
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 9652c29fe6ac08a1cb76112061f7d1010319d634[m
+Merge: 5c43e10f 0a331e1a
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Oct 21 11:41:05 2024 +0100
+
+    Merge pull request #2529 from kubernetes/dependabot/github_actions/kubernetes-sigs/release-actions-0.3.0
+    
+    build(deps): Bump kubernetes-sigs/release-actions from 0.2.0 to 0.3.0
+
+[33mcommit 5c43e10fa0f4e4ef1d3b1273fd3377747146d6ed[m
+Merge: e14a9d77 f9c945ae
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Oct 21 11:39:05 2024 +0100
+
+    Merge pull request #2530 from kubernetes/dependabot/go_modules/github.com/prometheus/client_golang-1.20.5
+    
+    build(deps): Bump github.com/prometheus/client_golang from 1.20.4 to 1.20.5
+
+[33mcommit f9c945aef53dab78e2841d9df1cbebb427cc273e[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Oct 21 10:03:28 2024 +0000
+
+    build(deps): Bump github.com/prometheus/client_golang
+    
+    Bumps [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) from 1.20.4 to 1.20.5.
+    - [Release notes](https://github.com/prometheus/client_golang/releases)
+    - [Changelog](https://github.com/prometheus/client_golang/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/client_golang/compare/v1.20.4...v1.20.5)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/client_golang
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 0a331e1a600b7a22056be0b9fc2d1c6fae811cc8[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Oct 21 09:12:08 2024 +0000
+
+    build(deps): Bump kubernetes-sigs/release-actions from 0.2.0 to 0.3.0
+    
+    Bumps [kubernetes-sigs/release-actions](https://github.com/kubernetes-sigs/release-actions) from 0.2.0 to 0.3.0.
+    - [Release notes](https://github.com/kubernetes-sigs/release-actions/releases)
+    - [Changelog](https://github.com/kubernetes-sigs/release-actions/blob/main/RELEASE.md)
+    - [Commits](https://github.com/kubernetes-sigs/release-actions/compare/2f8b9ec22aedc9ce15039b6c7716aa6c2907df1c...a69972745f85aab4ba5d6c681e2a0e7f73eaff2b)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: kubernetes-sigs/release-actions
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit e14a9d771c65c352f06cdcce0835d71daef4738e[m
+Merge: 75fba81c ea703455
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Sun Oct 20 11:23:03 2024 +0100
+
+    Merge pull request #2503 from mrueg/issue-2408
+    
+    feat: Move endpoint ports into address metric
+
+[33mcommit ea7034553f72c8e0d2caf0cc2433ab82487f4702[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Sun Sep 22 22:55:16 2024 +0200
+
+    feat(endpoints): Move ports into address metric
+    
+    This marks kube_endpoint_ports as deprecated
+
+[33mcommit 75fba81cf39752c0917fe323f7b33859ef929bad[m
+Merge: e2951911 28129e4d
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Oct 16 13:29:05 2024 +0100
+
+    Merge pull request #2527 from mrueg/rm-deprecated-metric
+    
+    chore: Remove deprecated endpoint address metric
+
+[33mcommit 28129e4d6d79aecac64985c8f1368e13fbb3078c[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Wed Oct 16 09:33:30 2024 +0200
+
+    chore: Remove deprecated endpoint address metric
+    
+    This was deprecated in 2022 in https://github.com/kubernetes/kube-state-metrics/pull/1761
+
+[33mcommit e29519112d2cf20b865c9ba02f6be01f9d7f2a96[m
+Merge: f3b75930 d7f7bd52
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Oct 16 06:29:03 2024 +0100
+
+    Merge pull request #2526 from mrueg/fix-govulncheck
+    
+    fix: update govulncheck's go version to 1.23
+
+[33mcommit d7f7bd5297d54c4b943037e603d481ae50bdcbb7[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Tue Oct 15 23:20:19 2024 +0200
+
+    fix: Add missed go 1.23 updates
+
+[33mcommit 90e7e1178cdff5aa7a80df2aafc2f24f5985cb90[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Tue Oct 15 23:18:19 2024 +0200
+
+    fix: update govulncheck's go version to 1.23
+
+[33mcommit f3b7593031ba0c60cb35a897b954bdf123f41b39[m
+Merge: 77a99a52 166921b7
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Oct 15 09:20:22 2024 +0100
+
+    Merge pull request #2478 from wallee94/remove-shard-validation-on-sts-create
+    
+    fix(discovery): configure sharding every time MetricsHandler.Run runs
+
+[33mcommit 77a99a52c54a1270a035fa55c82c17ffb5f2e255[m
+Merge: 0013d739 bd6beed3
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Oct 15 09:18:22 2024 +0100
+
+    Merge pull request #2502 from bartlettc22/cr-duplication-fix
+    
+    fix: de-duplication of custom resource metrics
+
+[33mcommit bd6beed33b12a7a4ead81b3106a54784273c0c6a[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Tue Oct 15 09:52:29 2024 +0200
+
+    Update internal/store/builder_test.go
+
+[33mcommit 0013d7398734020b85029574f3bc42720887fd73[m
+Merge: a9363414 4356a0f6
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Oct 14 10:46:21 2024 +0100
+
+    Merge pull request #2524 from kubernetes/dependabot/github_actions/actions/checkout-4.2.1
+    
+    build(deps): Bump actions/checkout from 4.2.0 to 4.2.1
+
+[33mcommit 4356a0f66e333153bceebb6d521fa5f26679fc74[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Oct 14 09:28:56 2024 +0000
+
+    build(deps): Bump actions/checkout from 4.2.0 to 4.2.1
+    
+    Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.0 to 4.2.1.
+    - [Release notes](https://github.com/actions/checkout/releases)
+    - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/actions/checkout/compare/d632683dd7b4114ad314bca15554477dd762a938...eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/checkout
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit a9363414964759db050a6b9ca95fe060110dd77e[m
+Merge: 2c5a2499 cd29fabd
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Oct 7 12:44:21 2024 +0100
+
+    Merge pull request #2519 from kubernetes/dependabot/go_modules/github.com/prometheus/common-0.60.0
+    
+    build(deps): Bump github.com/prometheus/common from 0.59.1 to 0.60.0
+
+[33mcommit cd29fabd66fee8975ab3d3f002dcac050abab312[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Oct 7 09:15:51 2024 +0000
+
+    build(deps): Bump github.com/prometheus/common from 0.59.1 to 0.60.0
+    
+    Bumps [github.com/prometheus/common](https://github.com/prometheus/common) from 0.59.1 to 0.60.0.
+    - [Release notes](https://github.com/prometheus/common/releases)
+    - [Changelog](https://github.com/prometheus/common/blob/main/RELEASE.md)
+    - [Commits](https://github.com/prometheus/common/compare/v0.59.1...v0.60.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/common
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit de58db2ed4399066caab971f8840d6ae88afa4cf[m
+Author: Chris Bartlett <bartlettc@gmail.com>
+Date:   Tue Oct 1 13:35:32 2024 -0600
+
+    restructure testing logic
+    
+    Co-authored-by: Pranshu Srivastava <prasriva@redhat.com>
+
+[33mcommit 166921b797100dadf51a153c8b932aab73dab4ff[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Mon Sep 30 10:46:42 2024 -0700
+
+    fix typo in comments
+
+[33mcommit 7b375e9ef4324b5a64c8ad679581c6034b8af0be[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Mon Sep 30 09:21:42 2024 -0700
+
+    undo changes in internal/store/builder.go
+
+[33mcommit 2c5a2499f0cc613552a473f570364cd719a25cce[m
+Merge: 49b25a87 ba9eb94f
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 30 15:34:04 2024 +0100
+
+    Merge pull request #2509 from kevinwangcn/fix-security-issue
+    
+    chore: Fix the security issue about sirupsen/logrus
+
+[33mcommit 49b25a87b94515b2cf31fe215b4720a703d0a4ba[m
+Merge: f7ac7620 ecbb9108
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 30 15:26:02 2024 +0100
+
+    Merge pull request #2515 from kubernetes/dependabot/github_actions/actions/checkout-4.2.0
+    
+    build(deps): Bump actions/checkout from 4.1.7 to 4.2.0
+
+[33mcommit f7ac76205690592911f94cf9e6e416ad90a58cd3[m
+Merge: f50205a4 f7ec4da6
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 30 15:24:04 2024 +0100
+
+    Merge pull request #2492 from mrueg/k8s-1.31
+    
+    chore: Bump to kubernetes 1.31.0
+
+[33mcommit ecbb9108419eaebda5240c976ade5dd964594c31[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Sep 30 09:55:48 2024 +0000
+
+    build(deps): Bump actions/checkout from 4.1.7 to 4.2.0
+    
+    Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.7 to 4.2.0.
+    - [Release notes](https://github.com/actions/checkout/releases)
+    - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/actions/checkout/compare/692973e3d937129bcbf40652eb9f2f61becf3332...d632683dd7b4114ad314bca15554477dd762a938)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/checkout
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit f2a76390e1fa7fee7b064d9a490f83284ceeec57[m
+Author: Renato Arruda <renato.arruda@schibsted.com>
+Date:   Thu Sep 26 14:02:08 2024 +0200
+
+    lint
+
+[33mcommit 3e2d1e9d9a53593a9fe0c57d8a6dace5087b2242[m
+Author: Renato Arruda <renato.arruda@schibsted.com>
+Date:   Wed Sep 18 11:41:04 2024 +0200
+
+    perf: use concurrent map when storing metrics
+    
+    In busy/large clusters, will prevent timeouts from long living
+    locks/concurrency issues, as the writing to the map takes overly long,
+    blocking the metrics-reading thread and as the lock doesn't get released
+    in a timely manner, timing out the request.
+    
+    Inpired by previous PR at https://github.com/kubernetes/kube-state-metrics/pull/1028
+
+[33mcommit ba9eb94f510ec50b75384e993f146b10929f0f86[m
+Author: Kevin Wang <kevwangcn@gmail.com>
+Date:   Tue Sep 24 18:27:24 2024 -0400
+
+    chore: Fix the security issue about sirupsen/logrus
+
+[33mcommit 294163d5d678a9ae074fef49b9fe2c60292b7305[m
+Merge: fb46163a f50205a4
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Tue Sep 24 12:18:42 2024 -0700
+
+    Merge branch 'main' into remove-shard-validation-on-sts-create
+
+[33mcommit fb46163adda36e7118eb40d039fbeee3e63e526f[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Tue Sep 24 12:17:58 2024 -0700
+
+    fix ciclomatic complexity lint in TestVariableVKsDiscoveryAndResolution
+
+[33mcommit f7ec4da61814713c9843336784a5fbc153a627cc[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Aug 30 22:15:25 2024 +0200
+
+    chore: Bump to kubernetes 1.31
+    
+    Breaking change for node metrics, as kube-proxy field is deprecated and
+    contains invalid information.
+    
+    See also
+    https://kubernetes.io/blog/2024/07/19/kubernetes-1-31-upcoming-changes/#deprecation-of-status-nodeinfo-kubeproxyversion-field-for-nodes-kep-4004-https-github-com-kubernetes-enhancements-issues-4004
+
+[33mcommit f50205a4dfc81042bb140f289a3d2bc81a7557d0[m
+Merge: 826134a3 4b420cb6
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Sep 24 11:56:03 2024 +0100
+
+    Merge pull request #2508 from mrueg/switch-to-slog
+    
+    chore: Migrate to slog for exporter-toolkit
+
+[33mcommit 4b420cb6f7818a2b9b187b00441181fe41e46e91[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Mon Sep 23 22:12:23 2024 +0200
+
+    chore: Migrate to slog
+
+[33mcommit 826134a3ffa25b841aaf12a3188be4e135f0f428[m
+Merge: 0b64d71e 9322447c
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 23 12:28:00 2024 +0100
+
+    Merge pull request #2506 from kubernetes/dependabot/go_modules/github.com/gobuffalo/flect-1.0.3
+    
+    build(deps): Bump github.com/gobuffalo/flect from 1.0.2 to 1.0.3
+
+[33mcommit 9322447ced2a011d7f28b60781b815a8c1c5b10d[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Sep 23 11:04:56 2024 +0000
+
+    build(deps): Bump github.com/gobuffalo/flect from 1.0.2 to 1.0.3
+    
+    Bumps [github.com/gobuffalo/flect](https://github.com/gobuffalo/flect) from 1.0.2 to 1.0.3.
+    - [Release notes](https://github.com/gobuffalo/flect/releases)
+    - [Commits](https://github.com/gobuffalo/flect/compare/v1.0.2...v1.0.3)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/gobuffalo/flect
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 0b64d71e6be7100cc9b2194171b0e1dbe910e14f[m
+Merge: 3d969c5c f2ab628d
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 23 12:04:00 2024 +0100
+
+    Merge pull request #2505 from kubernetes/dependabot/go_modules/github.com/prometheus/client_golang-1.20.4
+    
+    build(deps): Bump github.com/prometheus/client_golang from 1.20.3 to 1.20.4
+
+[33mcommit f2ab628d2bb5c89afa42b2e7a6c41b71e805938c[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Sep 23 09:23:49 2024 +0000
+
+    build(deps): Bump github.com/prometheus/client_golang
+    
+    Bumps [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) from 1.20.3 to 1.20.4.
+    - [Release notes](https://github.com/prometheus/client_golang/releases)
+    - [Changelog](https://github.com/prometheus/client_golang/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/client_golang/compare/v1.20.3...v1.20.4)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/client_golang
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 24c2194e7e6e9d2a7290d3a872abf42f6086c276[m
+Author: Chris Bartlett <bartlettc@gmail.com>
+Date:   Wed Sep 18 17:22:38 2024 -0600
+
+    fix: deduplication of cr enabled resources
+
+[33mcommit 9aad0c02f3d8a92c468dc91cb6fe7cb0543bbf54[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Fri Sep 13 12:30:56 2024 -0700
+
+    fix resource duplication in store builder
+    
+    Signed-off-by: Walther Lee <walthere.lee@gmail.com>
+
+[33mcommit 012121e50e99c8fa52f58e2495986ccea129e0cf[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Thu Sep 12 12:39:53 2024 -0700
+
+    update func docstring
+    
+    Signed-off-by: Walther Lee <walthere.lee@gmail.com>
+
+[33mcommit 1a1ca73eca87a691dcc7a27298b744e6e0bec9f8[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Thu Sep 12 12:38:08 2024 -0700
+
+    decouple BuildWriters from ConfigureSharding
+    
+    Signed-off-by: Walther Lee <walthere.lee@gmail.com>
+
+[33mcommit 8195dbe969d4acbe157ba124d308370f520d3f87[m
+Merge: 4aced25f 3d969c5c
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Thu Sep 12 10:45:56 2024 -0700
+
+    Merge branch 'main' into remove-shard-validation-on-sts-create
+
+[33mcommit 3d969c5ce9fec2e9e7cd59e2429cc4cc5a287ead[m
+Merge: 76ef2419 f34cd69c
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Thu Sep 12 11:19:12 2024 +0100
+
+    Merge pull request #2493 from mrueg/bump-go
+    
+    chore: Bump go to 1.23.1
+
+[33mcommit 76ef24190dbca4afb116d8f9d91fba41ae59b704[m
+Merge: aebbb390 643739d0
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Thu Sep 12 08:55:13 2024 +0100
+
+    Merge pull request #2485 from richabanker/no-job-conditions-fix
+    
+    fix: set kube_job_status_failed metric even when there are no job.Status.Conditions present
+
+[33mcommit f34cd69cee7c2b9e8a151899a5902a3cae5dda1a[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Aug 30 22:43:29 2024 +0200
+
+    chore: Bump go to 1.23.1
+
+[33mcommit aebbb390820496d46750697aa6956c57ff082d41[m
+Merge: 52ae178b 3a10a4ee
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 9 17:44:45 2024 +0100
+
+    Merge pull request #2498 from SamuAlfageme/fix-readme-codeblocks
+    
+    docs: fix unformatted code blocks in README
+
+[33mcommit 3a10a4ee2e1b1673df23a3464bdcf8792309dc6a[m
+Author: Samuel Alfageme Sainz <samuel@alfage.me>
+Date:   Mon Sep 9 18:30:58 2024 +0200
+
+    Fix unformatted code blocks in README
+
+[33mcommit 52ae178b7d95062226f9f8354ccc730564f9c1fe[m
+Merge: 24b0f7ff 3dced14a
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 9 10:46:28 2024 +0100
+
+    Merge pull request #2497 from kubernetes/dependabot/go_modules/github.com/prometheus/common-0.59.1
+    
+    build(deps): Bump github.com/prometheus/common from 0.58.0 to 0.59.1
+
+[33mcommit 3dced14afe795df65c4c78b08f1252361cdc06b8[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Sep 9 09:37:14 2024 +0000
+
+    build(deps): Bump github.com/prometheus/common from 0.58.0 to 0.59.1
+    
+    Bumps [github.com/prometheus/common](https://github.com/prometheus/common) from 0.58.0 to 0.59.1.
+    - [Release notes](https://github.com/prometheus/common/releases)
+    - [Changelog](https://github.com/prometheus/common/blob/main/RELEASE.md)
+    - [Commits](https://github.com/prometheus/common/compare/v0.58.0...v0.59.1)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/common
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 24b0f7fffa79bc04c093709a3e3e20a12bb5c5dd[m
+Merge: db01d3eb 12a22912
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Sep 9 10:36:27 2024 +0100
+
+    Merge pull request #2496 from kubernetes/dependabot/go_modules/github.com/prometheus/client_golang-1.20.3
+    
+    build(deps): Bump github.com/prometheus/client_golang from 1.20.2 to 1.20.3
+
+[33mcommit 12a22912875a7cdeb2895b1912949e9c8da86922[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Sep 9 09:27:47 2024 +0000
+
+    build(deps): Bump github.com/prometheus/client_golang
+    
+    Bumps [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) from 1.20.2 to 1.20.3.
+    - [Release notes](https://github.com/prometheus/client_golang/releases)
+    - [Changelog](https://github.com/prometheus/client_golang/blob/v1.20.3/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/client_golang/compare/v1.20.2...v1.20.3)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/client_golang
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 4aced25f69e00d54ec3e03a921f8bf60d4e8a783[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Thu Sep 5 13:58:52 2024 -0700
+
+    fix race condition in metrics handler
+    
+    Signed-off-by: Walther Lee <walthere.lee@gmail.com>
+
+[33mcommit db01d3eb023c0e0d7d727c1f91f241b256d9a7f3[m
+Merge: e6f359db 805b70a0
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Sep 3 21:36:26 2024 +0100
+
+    Merge pull request #2494 from kubernetes/dependabot/go_modules/github.com/prometheus/exporter-toolkit-0.12.0
+    
+    build(deps): Bump github.com/prometheus/exporter-toolkit from 0.11.0 to 0.12.0
+
+[33mcommit 805b70a086997ea75d720a2b2e22b958f3344ccc[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Tue Sep 3 20:26:09 2024 +0000
+
+    build(deps): Bump github.com/prometheus/exporter-toolkit
+    
+    Bumps [github.com/prometheus/exporter-toolkit](https://github.com/prometheus/exporter-toolkit) from 0.11.0 to 0.12.0.
+    - [Release notes](https://github.com/prometheus/exporter-toolkit/releases)
+    - [Changelog](https://github.com/prometheus/exporter-toolkit/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/exporter-toolkit/compare/v0.11.0...v0.12.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/exporter-toolkit
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit e6f359db36ab62b0238aff20bf568ad69f998a87[m
+Merge: c864c936 218f0510
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Aug 30 21:10:44 2024 +0100
+
+    Merge pull request #2491 from kubernetes/dependabot/go_modules/github.com/prometheus/common-0.57.0
+    
+    build(deps): Bump github.com/prometheus/common from 0.55.0 to 0.57.0
+
+[33mcommit 218f051024dc74395faba29c1e24a8c2e88ceee2[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Aug 30 19:54:52 2024 +0000
+
+    build(deps): Bump github.com/prometheus/common from 0.55.0 to 0.57.0
+    
+    Bumps [github.com/prometheus/common](https://github.com/prometheus/common) from 0.55.0 to 0.57.0.
+    - [Release notes](https://github.com/prometheus/common/releases)
+    - [Changelog](https://github.com/prometheus/common/blob/main/RELEASE.md)
+    - [Commits](https://github.com/prometheus/common/compare/v0.55.0...v0.57.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/common
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 643739d04a03d5263868194efc5d3f9664e158ee[m
+Author: Richa Banker <richabanker@google.com>
+Date:   Tue Aug 27 20:11:39 2024 -0700
+
+    Add unit test
+
+[33mcommit 20589ac310a2efec015e0f844449f16640aff5cd[m
+Author: Richa Banker <richabanker@google.com>
+Date:   Fri Aug 23 15:14:55 2024 -0700
+
+    Set metric even when there are no job.Status.Conditions present
+
+[33mcommit 082aba26c0d7aed9f4ba45d1821196cf506cc139[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Tue Aug 27 14:14:07 2024 -0700
+
+    update discovery to reconfigure sharding
+    
+    Signed-off-by: Walther Lee <walthere.lee@gmail.com>
+
+[33mcommit c864c93606db61e1c424b9313da03522f9f11adb[m
+Merge: 8e4a2ec7 4d82424e
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Aug 26 10:46:27 2024 +0100
+
+    Merge pull request #2486 from kubernetes/dependabot/go_modules/github.com/prometheus/client_golang-1.20.2
+    
+    build(deps): Bump github.com/prometheus/client_golang from 1.20.1 to 1.20.2
+
+[33mcommit 4d82424e9ea5907da977ee1ccadd818479e101d8[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Aug 26 09:25:58 2024 +0000
+
+    build(deps): Bump github.com/prometheus/client_golang
+    
+    Bumps [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) from 1.20.1 to 1.20.2.
+    - [Release notes](https://github.com/prometheus/client_golang/releases)
+    - [Changelog](https://github.com/prometheus/client_golang/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/client_golang/compare/v1.20.1...v1.20.2)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/client_golang
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 8e4a2ec7c98cab061cd20a126ecf77584cad9dcd[m
+Merge: 518a39aa 0a86b24b
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Sun Aug 25 08:22:08 2024 +0100
+
+    Merge pull request #2470 from mrueg/better-align
+    
+    chore: Memory align structs
+
+[33mcommit 518a39aae1c33c8613b1cd019a1e951c5e642fd0[m
+Merge: 029b6d3a 089ed455
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Sat Aug 24 23:32:08 2024 +0100
+
+    Merge pull request #2469 from mrueg/bump-e2e-k8s
+    
+    chore: Bump e2e kind node to 1.30
+
+[33mcommit 029b6d3a978dea52c870fb9b51141e0c00b263c2[m
+Merge: 48ade3d3 1e8fd2c1
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Aug 23 19:04:23 2024 +0100
+
+    Merge pull request #2484 from kubernetes/dependabot/go_modules/tools/github.com/jsonnet-bundler/jsonnet-bundler-0.6.0
+    
+    build(deps): Bump github.com/jsonnet-bundler/jsonnet-bundler from 0.5.1 to 0.6.0 in /tools
+
+[33mcommit 1e8fd2c1073837d7048be92ad1bc11700b67c5f2[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Aug 23 17:56:28 2024 +0000
+
+    build(deps): Bump github.com/jsonnet-bundler/jsonnet-bundler in /tools
+    
+    Bumps [github.com/jsonnet-bundler/jsonnet-bundler](https://github.com/jsonnet-bundler/jsonnet-bundler) from 0.5.1 to 0.6.0.
+    - [Release notes](https://github.com/jsonnet-bundler/jsonnet-bundler/releases)
+    - [Changelog](https://github.com/jsonnet-bundler/jsonnet-bundler/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/jsonnet-bundler/jsonnet-bundler/compare/v0.5.1...v0.6.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/jsonnet-bundler/jsonnet-bundler
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 48ade3d36b2b0e4d071842ce196371532c30d9b7[m
+Merge: f7304dc8 1408e457
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Aug 21 22:04:29 2024 +0100
+
+    Merge pull request #2481 from kubernetes/dependabot/go_modules/github.com/prometheus/client_golang-1.20.1
+    
+    build(deps): Bump github.com/prometheus/client_golang from 1.20.0 to 1.20.1
+
+[33mcommit 1408e45721d39e72150e1c5543b11db007b7d5c3[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Aug 21 20:55:13 2024 +0000
+
+    build(deps): Bump github.com/prometheus/client_golang
+    
+    Bumps [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) from 1.20.0 to 1.20.1.
+    - [Release notes](https://github.com/prometheus/client_golang/releases)
+    - [Changelog](https://github.com/prometheus/client_golang/blob/v1.20.1/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/client_golang/compare/v1.20.0...v1.20.1)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/client_golang
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit f7304dc8d8337ad4028c6e9f02dd47ab2fb0aa52[m
+Merge: 27627590 8359c102
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Aug 19 09:09:56 2024 -0700
+
+    Merge pull request #2479 from Daividao/fix-outdated-registryfactory-comments
+    
+    docs: Fix outdated RegistryFactory.MetricFamilyGenerators comments
+
+[33mcommit 8359c102fa309c9c278fa22dcc61f5ffad3e9013[m
+Author: Daividao <vitrandao@gmail.com>
+Date:   Sat Aug 17 16:21:24 2024 -0700
+
+    Fix outdated RegistryFactory.MetricFamilyGenerators comments
+
+[33mcommit dec7a1b93e0066d5d3ec00e992b6165d62723f08[m
+Author: Walther Lee <walthere.lee@gmail.com>
+Date:   Fri Aug 16 09:43:44 2024 -0700
+
+    fix(discovery): configure sharding every time MetricsHandler.Run runs
+    
+    Signed-off-by: Walther Lee <walthere.lee@gmail.com>
+
+[33mcommit 276275904116ed9cd039e4e8e4087c11b72ab54e[m
+Merge: f8aa7d9b 894862eb
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Aug 14 14:07:17 2024 -0700
+
+    Merge pull request #2477 from kubernetes/dependabot/go_modules/github.com/prometheus/client_golang-1.20.0
+    
+    build(deps): Bump github.com/prometheus/client_golang from 1.19.1 to 1.20.0
+
+[33mcommit 894862eb6a4cb4c725ebc64062430ab5fc4dfc4e[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Aug 14 15:52:12 2024 +0000
+
+    build(deps): Bump github.com/prometheus/client_golang
+    
+    Bumps [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) from 1.19.1 to 1.20.0.
+    - [Release notes](https://github.com/prometheus/client_golang/releases)
+    - [Changelog](https://github.com/prometheus/client_golang/blob/v1.20.0/CHANGELOG.md)
+    - [Commits](https://github.com/prometheus/client_golang/compare/v1.19.1...v1.20.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/prometheus/client_golang
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 0a86b24b08431c597519e19937b07162247035e3[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Aug 8 18:57:22 2024 +0200
+
+    chore: Memory align structs
+    
+    pkg/metric_generator/generator.go:32:22: 16 bytes saved: struct with 96 pointer bytes could be 80
+    pkg/metrics_store/metrics_store.go:31:19: 40 bytes saved: struct with 64 pointer bytes could be 24
+    pkg/options/options.go:42:14: 24 bytes saved: struct of size 384 could be 360
+    internal/store/builder.go:67:14: 8 bytes saved: struct of size 200 could be 192
+    internal/store/pod.go:1351:16: 8 bytes saved: struct with 16 pointer bytes could be 8
+    internal/store/pod.go:1477:20: 8 bytes saved: struct with 16 pointer bytes could be 8
+    internal/store/testutils.go:32:30: 16 bytes saved: struct with 136 pointer bytes could be 120
+    pkg/metricshandler/metrics_handler.go:46:21: 8 bytes saved: struct of size 104 could be 96
+    internal/discovery/types.go:39:19: 32 bytes saved: struct with 88 pointer bytes could be 56
+    pkg/customresourcestate/config.go:51:15: 16 bytes saved: struct with 112 pointer bytes could be 96
+    pkg/customresourcestate/config.go:134:16: 8 bytes saved: struct with 88 pointer bytes could be 80
+    pkg/customresourcestate/config.go:150:13: 8 bytes saved: struct with 40 pointer bytes could be 32
+    pkg/customresourcestate/config_metrics_types.go:29:18: 8 bytes saved: struct with 64 pointer bytes could be 56
+    pkg/customresourcestate/config_metrics_types.go:42:17: 8 bytes saved: struct with 40 pointer bytes could be 32
+    pkg/customresourcestate/registry_factory.go:125:21: 8 bytes saved: struct with 40 pointer bytes could be 32
+    pkg/customresourcestate/registry_factory.go:212:20: 16 bytes saved: struct with 88 pointer bytes could be 72
+    pkg/customresourcestate/registry_factory.go:377:23: 8 bytes saved: struct with 104 pointer bytes could be 96
+    pkg/customresourcestate/registry_factory.go:497:21: 8 bytes saved: struct with 64 pointer bytes could be 56
+    pkg/customresourcestate/registry_factory.go:549:13: 8 bytes saved: struct with 24 pointer bytes could be 16
+
+[33mcommit 089ed4551f82b9739dab90d6757e59b7354411e1[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Thu Aug 8 18:55:08 2024 +0200
+
+    chore: Bump e2e kind node to 1.30
+
+[33mcommit f8aa7d9bb9d8e29876e19f4859391a54a7e61d63[m
+Merge: b1c2e0c1 ab06f81c
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Aug 6 00:36:50 2024 -0700
+
+    Merge pull request #2466 from mrueg/drop-dynamic-client
+    
+    chore: Add unused linter
+
+[33mcommit ab06f81c004ed3405a749e92c60ee512f107ede4[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Mon Aug 5 19:35:51 2024 +0200
+
+    chore: Remove further unused
+
+[33mcommit 2548615cd79c7e4a7d6394340016ddcfbc4ade0d[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Mon Aug 5 18:28:11 2024 +0200
+
+    chore: Add unused linter to golangci
+
+[33mcommit a652104decb7d302ec23a047d244fe3a1515a3d0[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Mon Aug 5 17:49:17 2024 +0200
+
+    chore: Remove unused dynamicClient
+
+[33mcommit b1c2e0c1cf897202fa10da7b622e883df8a7a66e[m
+Merge: 312b2982 b43702ed
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Aug 5 09:26:59 2024 -0700
+
+    Merge pull request #2467 from CatherineF-dev/patch-12
+    
+    fix: e2e test failure
+
+[33mcommit b43702ed1405908879de80c0f81bd42be13243d4[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Mon Aug 5 12:17:18 2024 -0400
+
+    Update e2e.sh
+
+[33mcommit cdce0e3278f44f455fcba236a8d8e04f81734bd3[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Mon Aug 5 12:06:35 2024 -0400
+
+    Rename deployment-no-node-pods.yaml to deployment-unscheduled-pods-fetching.yaml
+
+[33mcommit 311d3f749a0093d4b8d4a8cc499aa2f02927f86b[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Mon Aug 5 12:06:22 2024 -0400
+
+    Rename deployment-no-node-pods-service.yaml to deployment-unscheduled-pods-fetching-service.yaml
+
+[33mcommit 720ea8cd89df2f66a1176ffe8fe909f2858f91a2[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Mon Aug 5 12:05:51 2024 -0400
+
+    Update deployment-no-node-pods-service.yaml
+
+[33mcommit aeade6169838b267876f35c9cf83fee5b9fcb2d0[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Mon Aug 5 12:05:17 2024 -0400
+
+    Update kube-state-metrics.libsonnet
+
+[33mcommit f44bafd9af8f99ee4bd717009eb05a9a779f53f7[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Mon Aug 5 11:52:04 2024 -0400
+
+    Fix e2e test failure
+
+[33mcommit 312b298239e34b5576a07b69772e6d43c58e8f06[m
+Merge: 45b5a26c 3aebcf71
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Aug 5 08:44:59 2024 -0700
+
+    Merge pull request #2454 from jeffmccune/jeff/kp
+    
+    fix: syntax errors in kube-state-metrics.libsonnet
+
+[33mcommit 3aebcf71a9da8df9cff2ecf3ba2c47017e329b81[m
+Author: Jeff McCune <jeff@openinfrastructure.co>
+Date:   Wed Jul 24 16:36:46 2024 -0700
+
+    fix: syntax errors in kube-state-metrics.libsonnet
+    
+    Previously customizing kube-prometheus [1] failed with the following
+    error.
+    
+        ❯ ./build.sh example.jsonnet
+        + set -o pipefail
+        + rm -rf manifests
+        + mkdir -p manifests/setup
+        + jsonnet -J vendor -m manifests example.jsonnet
+        + xargs '-I{}' sh -c 'cat {} | gojsontoyaml > {}.yaml' -- '{}'
+        RUNTIME ERROR: vendor/github.com/kubernetes/kube-state-metrics/jsonnet/kube-state-metrics/kube-state-metrics.libsonnet:392:21-22 Expected token OPERATOR but got "{"
+                vendor/kube-prometheus/components/kube-state-metrics.libsonnet:51:19-124        function <anonymous>
+                vendor/kube-prometheus/main.libsonnet:136:21-64 object <anonymous>
+                vendor/kube-prometheus/platforms/platforms.libsonnet:37:22-40   +:
+                example.jsonnet:33:90-109       thunk from <$>
+                <std>:1539:24-25        thunk from <function <anonymous>>
+                <std>:1539:5-33 function <anonymous>
+                example.jsonnet:33:73-110       $
+                example.jsonnet:33:1-112
+                example.jsonnet:33:1-112
+                During evaluation
+    
+    With this patch, the build succeeds:
+    
+        ❯ bash build.sh example.jsonnet ; echo $?
+        + set -o pipefail
+        + rm -rf manifests
+        + mkdir -p manifests/setup
+        + jsonnet -J vendor -m manifests example.jsonnet
+        + xargs '-I{}' sh -c 'cat {} | gojsontoyaml > {}.yaml' -- '{}'
+        + find manifests -type f '!' -name '*.yaml' -delete
+        + rm -f kustomization
+        0
+    
+    [1]: https://github.com/prometheus-operator/kube-prometheus/blob/main/docs/customizing.md
+
+[33mcommit 45b5a26c3ee832226af714b65d4f7c63f0d0b856[m
+Merge: 5878458d 74d226cc
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Aug 5 08:09:00 2024 -0700
+
+    Merge pull request #2465 from mrueg/newreflectorwithoptions
+    
+    chore: Replace NewReflector with NewReflectorWithOptions func
+
+[33mcommit 5878458d971b3e26ba1ac59785a5eb55b605fc88[m
+Merge: d1e71791 cc79a584
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Aug 5 08:06:59 2024 -0700
+
+    Merge pull request #2464 from mrueg/avoid-naked-return
+    
+    chore: Avoid naked return
+
+[33mcommit 74d226ccf04f529e470900e7a268528ed82ef23c[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Mon Aug 5 16:44:43 2024 +0200
+
+    chore: Replace NewReflector with NewReflectorWithOptions func
+
+[33mcommit cc79a584115671f2a7fe172e2adaef57032f0084[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Mon Aug 5 16:12:38 2024 +0200
+
+    chore: Avoid naked return
+
+[33mcommit d1e717911b537035bf74ed976b4af89843a74bc4[m
+Merge: e96dfc0a 0dd960eb
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Sat Jul 27 10:30:24 2024 -0700
+
+    Merge pull request #2456 from mrueg/dockerfile
+    
+    fix(Dockerfile): Install tools so VERSION gets set
+
+[33mcommit 0dd960eb3104f1eca3393cba0c75d33a344431ee[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Jul 26 13:56:17 2024 +0200
+
+    Dockerfile: Install tools so VERSION gets set
+
+[33mcommit e96dfc0a39d8e2ae759a954a98d8bc9b29bf1a3e[m
+Merge: a3e9266c aeb9e355
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Wed Jul 24 10:16:50 2024 -0700
+
+    Merge pull request #2388 from CatherineF-dev/patch-11
+    
+    fix: use --track-unscheduled-pods to select unscheduled pods in Daemonset sharding
+
+[33mcommit aeb9e355b5355aeebd3428b3d65af02e2607a646[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Tue Jul 16 20:33:58 2024 -0400
+
+    Fix Nodetype
+
+[33mcommit e18b5573ac4963559810e362a7356049690ec1a3[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Tue Jul 2 09:54:31 2024 -0400
+
+    format
+
+[33mcommit eda1984438d040e18f26c3bd2538409f4242ff75[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Fri Jun 28 15:04:40 2024 -0400
+
+    Rename --enable-unscheduled-pods-fetching to --track-unscheduled-pods
+
+[33mcommit 19a0544f4477438518efd66b3a2c0d14d3a3de65[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Fri Jun 14 08:01:40 2024 -0400
+
+    update doc
+
+[33mcommit c9ceded7247ef537db62c1795788243c4da87e4b[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Fri Jun 14 07:48:41 2024 -0400
+
+    Update docs/developer/cli-arguments.md
+    
+    Co-authored-by: Manuel Rüger <manuel@rueg.eu>
+
+[33mcommit bb5a37c6e917e689be59c0971dd25043a8d1972e[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Fri Jun 14 07:48:25 2024 -0400
+
+    Update jsonnet/kube-state-metrics/kube-state-metrics.libsonnet
+    
+    Co-authored-by: Manuel Rüger <manuel@rueg.eu>
+
+[33mcommit 4a524950f17b2b68ebedd52dae9791058589e7d7[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Fri Jun 14 07:48:12 2024 -0400
+
+    Update pkg/options/types.go
+    
+    Co-authored-by: Alex Kennedy <alexzanderkennedy@gmail.com>
+
+[33mcommit 85f8a2c4cc9339288fa78e923127faab1fa97d25[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Thu Jun 13 12:46:48 2024 -0400
+
+    rename to --enable-unscheduled-pods-fetching
+
+[33mcommit 49e1170f673b272781d00dcc334d16df5f444a76[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Thu Jun 13 11:25:37 2024 -0400
+
+    rename to --fetch-unscheduled-pods
+
+[33mcommit b27845d5352737457439bc8b8482af442d87d871[m
+Author: CatherineF-dev <yinghongfang@google.com>
+Date:   Fri Jun 7 08:12:13 2024 -0400
+
+    use --enable-no-node-scrape
+    
+    Co-authored-by: Alex Kennedy <alexzanderkennedy@gmail.com>
+
+[33mcommit 8f3c5c432bc2d2800d471d71c703eeb7125d6604[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Wed Jun 5 09:36:09 2024 -0400
+
+    Add e2e test
+
+[33mcommit b45913db5963958c0008cb5f8a608402f3b74c1c[m
+Author: Catherine Fang <yinghongfang@google.com>
+Date:   Fri May 17 07:37:19 2024 -0400
+
+    Fix --nodeName= doesn't select unscheduable pods
+    
+    pods
+
+[33mcommit a3e9266c8fa7dbe19fb3f1ee95517d3316c6ee58[m
+Merge: 38c26890 8753dfd5
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Jul 19 09:29:57 2024 -0700
+
+    Merge pull request #2451 from ricardoapl/generate-sbom-command-not-found
+    
+    ci: missing line break escape on sbom workflow
+
+[33mcommit 38c268909335d243fc260ed4d6ce713db3265464[m
+Merge: 7104d579 76c5888e
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Jul 19 08:21:06 2024 -0700
+
+    Merge pull request #2450 from kubernetes/release-2.13
+    
+    chore: Merge release branch back to main
+
+[33mcommit 8753dfd5b7a5ef0354f6eb6cd9ba0748daf78e28[m
+Author: Ricardo Lopes <ricardoapl.dev@gmail.com>
+Date:   Fri Jul 19 16:08:44 2024 +0100
+
+    Fix missing line break escape on sbom workflow
+    
+    Signed-off-by: Ricardo Lopes <ricardoapl.dev@gmail.com>
+
+[33mcommit 76c5888e3402c946abd6f31876f3aada4c0c84fc[m
+Merge: 7104d579 b8c11661
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Fri Jul 19 06:21:55 2024 -0700
+
+    Merge pull request #2419 from mrueg/prep-2.13.0
+    
+    chore: Prep release v2.13.0
+
+[33mcommit b8c11661534ceb060ae3885bd5f261cfec140fb8[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Jun 14 11:53:29 2024 +0200
+
+    *: Cut 2.13.0
+
+[33mcommit b4f4dff5c57624b7a511d41fbdb516a30c45b30d[m
+Author: Manuel Rüger <manuel@rueg.eu>
+Date:   Fri Jun 14 11:53:01 2024 +0200
+
+    Bump dependencies
+
+[33mcommit 7104d579e93d672754c018a924d6c3f7ec23874e[m
+Merge: 59726172 2e4b3e49
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Jul 16 08:23:48 2024 -0700
+
+    Merge pull request #2444 from sanadhis/chore-add-kustomization
+    
+    chore: add kustomization to standard example
+
+[33mcommit 2e4b3e4965981cc8d6c5f52b2f925e3e95b7d51b[m
+Author: sanadhis <sanadhis@gmail.com>
+Date:   Wed Jul 10 16:35:14 2024 +0200
+
+    chore: add kustomization to standard example
+
+[33mcommit 5972617294a8480bfd1657ebeaabbc9c683ff0dc[m
+Merge: f7618dfc eea0524d
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Tue Jul 16 05:50:59 2024 -0700
+
+    Merge pull request #2447 from SuperQ/auto_memlimit
+    
+    perf: Add automatic detection of memory limits
+
+[33mcommit eea0524d54652573d28cd3978beaa6c7729bc213[m
+Author: SuperQ <superq@gmail.com>
+Date:   Fri Jul 12 16:24:17 2024 +0200
+
+    Add automatic detection of memory limits
+    
+    Add automatic detection of container and system memory limits to control
+    the Go `GOMEMLIMIT` garbage collector feature. This helps reduced OOMs
+    by triggering GC when the process approaches system limits.
+    
+    Signed-off-by: SuperQ <superq@gmail.com>
+
+[33mcommit f7618dfc3299849597371c64e1c674599336120f[m
+Merge: a1fb0ce2 dbb0276a
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Jul 15 05:15:10 2024 -0700
+
+    Merge pull request #2442 from rexagod/readyz
+    
+    fix: add `readyz` endpoint
+
+[33mcommit dbb0276a420b0ec9f172c66bbe5905e86e2764c6[m
+Author: Pranshu Srivastava <rexagod@gmail.com>
+Date:   Mon Jul 8 13:57:38 2024 +0530
+
+    fixup! fixup! fix: add `readyz` endpoint
+
+[33mcommit a1fb0ce2673fb5f59ab24ba06e35225cdc4f6d37[m
+Merge: 85d1423b b954ff66
+Author: Kubernetes Prow Robot <20407524+k8s-ci-robot@users.noreply.github.com>
+Date:   Mon Jul 15 02:55:09 2024 -0700
+
+    Merge pull request #2448 from kubernetes/dependabot/github_actions/actions/setup-go-5.0.2
+    
+    build(deps): Bump actions/setup-go from 5.0.1 to 5.0.2
+
+[33mcommit b954ff66f6603c01459033df2bdd7843aa738a87[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Jul 15 09:48:21 2024 +0000
+
+    build(deps): Bump actions/setup-go from 5.0.1 to 5.0.2
+    
+    Bumps [actions/setup-go](https://github.com/actions/setup-go) from 5.0.1 to 5.0.2.
+    - [Release notes](https://github.com/actions/setup-go/releases)
+    - [Commits](https://github.com/actions/setup-go/compare/cdcb36043654635271a94b9a6d1392de5bb323a7...0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/setup-go
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit b980579e0885b5f6fe9a6b47ff71b4da9fef647e[m
+Author: Pranshu Srivastava <rexagod@gmail.com>
+Date:   Fri Jul 5 18:27:48 2024 +0530
+
+    fixup! fix: add `readyz` endpoint
+
+[33mcommit dae1f062c0994d724478ca8e6024e2ad366cb2a8[m
+Author: Pranshu Srivastava <rexagod@gmail.com>
+Date:   Thu Jul 4 01:08:42 2024 +0530
+
+    fix: add `readyz` endpoint
+    
+    Discourage the usage of `/metrics` for any probe, and use `/readyz` in
+    place of the earlier telemetry metrics endpoint to secure the exposition
+    data.
+    
+    Signed-off-by: Pranshu Srivastava <rexagod@gmail.com>
