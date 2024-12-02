@@ -163,6 +163,74 @@ func TestGVKMapsResolveGVK(t *testing.T) {
 				},
 			},
 		},
+		{
+			desc: "fixed version and kind, no matching cache entry",
+			gvkmaps: &CRDiscoverer{
+				Map: map[string]map[string][]kindPlural{
+					"testgroup": {
+						"v1": {
+							kindPlural{
+								Kind:   "TestObject2",
+								Plural: "testobjects2",
+							},
+						},
+					},
+				},
+			},
+			gvk:  schema.GroupVersionKind{Group: "testgroup", Version: "v1", Kind: "TestObject1"},
+			want: nil,
+		},
+		{
+			desc: "variable version, no matching cache entry",
+			gvkmaps: &CRDiscoverer{
+				Map: map[string]map[string][]kindPlural{
+					"testgroup-1": {
+						"v1alpha1": {
+							kindPlural{
+								Kind:   "TestObject1",
+								Plural: "testobjects1",
+							},
+						},
+					},
+				},
+			},
+			gvk:  schema.GroupVersionKind{Group: "testgroup", Version: "*", Kind: "TestObject1"},
+			want: nil,
+		},
+		{
+			desc: "variable kind, no matching cache entry",
+			gvkmaps: &CRDiscoverer{
+				Map: map[string]map[string][]kindPlural{
+					"testgroup": {
+						"v1alpha1": {
+							kindPlural{
+								Kind:   "TestObject1",
+								Plural: "testobjects1",
+							},
+						},
+					},
+				},
+			},
+			gvk:  schema.GroupVersionKind{Group: "testgroup", Version: "v1", Kind: "*"},
+			want: nil,
+		},
+		{
+			desc: "variable version and kind, no matching cache entry",
+			gvkmaps: &CRDiscoverer{
+				Map: map[string]map[string][]kindPlural{
+					"testgroup-1": {
+						"v1alpha1": {
+							kindPlural{
+								Kind:   "TestObject1",
+								Plural: "testobjects1",
+							},
+						},
+					},
+				},
+			},
+			gvk:  schema.GroupVersionKind{Group: "testgroup", Version: "*", Kind: "*"},
+			want: nil,
+		},
 	}
 	for _, tc := range testcases {
 		got, err := tc.gvkmaps.ResolveGVKToGVKPs(tc.gvk)
